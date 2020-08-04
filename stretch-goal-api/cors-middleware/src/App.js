@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Axios from "axios";
+
+// server.use(express.json());
+// server.use(cors());
 
 function App() {
   useEffect(() => {
     Axios({
       method: "GET",
-      url: "http://localhost:8000/api/users",
+      url: "http://172.20.10.2:8000/api/users",
       headers: {
         "Content-Type": "application/json",
       },
