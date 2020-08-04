@@ -1,20 +1,22 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-const cors = require("cors");
+// import React from "react";
+// import axios from "axios";
+// import cors from "cors";
 
-server.use(cors());
-server.use(express.json());
+// // const cors = require("cors");
+// // const axios = require("axios");
+// // const express = require("express");
 
-const userList = () => {
-  useEffect(() => {
-    axios
-      .get("http://localhost:8000/api/users")
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, []);
-};
-export default userList;
+// server.use(cors());
+// server.use(express.json());
+
+// const userList = () => {
+//   axios
+//     .get("http://localhost:8000/api/users")
+//     .then((res) => {
+//       console.log(res);
+//     })
+//     .catch((err) => {
+//       console.error(err);
+//     });
+// };
+// export default userList;
